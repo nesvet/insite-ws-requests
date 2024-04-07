@@ -1,0 +1,31 @@
+{
+	"name": "insite-ws-requests",
+	"version": "1.0.310",
+	"description": "inSite async requests over WebSockets",
+	"type": "module",
+	"main": "./lib/index.js",
+	"module": "./lib/index.js",
+	"packageManager": "yarn@1.22.22",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/nesvet/insite-ws-requests.git"
+	},
+	"keywords": [
+		"insite",
+		"ws",
+		"websockets",
+		"async",
+		"requests"
+	],
+	"author": "Eugene Nesvetaev <dev@nesvet.dev> (https://nesvet.dev/)",
+	"license": "MIT",
+	"dependencies": {
+		"@nesvet/n": "^1"
+	},
+	"devDependencies": {
+		"@nesvet/eslint-config": "^1"
+	}
+}
