@@ -1,14 +1,14 @@
 {
 	"name": "insite-ws-requests",
-	"version": "1.0.311",
+	"version": "1.0.313",
 	"description": "inSite async requests over WebSockets",
 	"type": "module",
 	"main": "./dist/index.js",
 	"module": "./dist/index.js",
-	"packageManager": "yarn@1.22.22",
+	"packageManager": "bun@1.1.8",
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"build": "node .conveyer"
+		"build": "bun .conveyer.js"
 	},
 	"repository": {
 		"type": "git",
@@ -27,7 +27,7 @@
 		"@nesvet/n": "^1"
 	},
 	"devDependencies": {
-		"@nesvet/conveyer": "^1",
+		"@nesvet/conveyer": "^2",
 		"@nesvet/eslint-config": "^1"
 	}
 }
