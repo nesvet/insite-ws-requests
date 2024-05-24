@@ -9,5 +9,5 @@ $ npm install insite-ws-requests
 Or
 
 ```sh
-$ yarn add insite-ws-requests
+$ bun add insite-ws-requests
 ```
