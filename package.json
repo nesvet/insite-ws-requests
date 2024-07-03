@@ -1,11 +1,11 @@
 {
   "name": "insite-ws-requests",
-  "version": "1.0.314",
+  "version": "1.0.315",
   "description": "inSite async requests over WebSockets",
   "type": "module",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
-  "packageManager": "bun@1.1.9",
+  "packageManager": "bun@1.1.17",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "bun .conveyer.js"
@@ -24,10 +24,10 @@
   "author": "Eugene Nesvetaev <dev@nesvet.dev> (https://nesvet.dev/)",
   "license": "MIT",
   "dependencies": {
-    "@nesvet/n": "^1"
+    "@nesvet/n": "^1.0.63"
   },
   "devDependencies": {
-    "@nesvet/conveyer": "^2",
+    "@nesvet/conveyer": "^2.2.1",
     "@nesvet/eslint-config": "^2.0.21"
   }
 }
