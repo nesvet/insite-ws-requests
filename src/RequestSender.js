@@ -5,7 +5,7 @@ import { headers } from "./common";
 export class RequestSender {
 	constructor(ws) {
 		if (ws.isWebSocketServer)
-			ws.options.WebSocket.prototype.sendRequest = RequestSender.send;
+			ws.on("client-connect", RequestSender.handleClientConnect);
 		else
 			ws.sendRequest = RequestSender.send;
 		
@@ -34,6 +34,14 @@ export class RequestSender {
 				this.sendMessage(headers.request, id, ...args);
 				
 			});
+	}
+	
+	
+	static handleClientConnect(ws) {
+		Object.assign(ws, {
+			sendRequest: RequestSender.send
+		});
+		
 	}
 	
 }
