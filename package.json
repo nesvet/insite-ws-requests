@@ -1,6 +1,6 @@
 {
   "name": "insite-ws-requests",
-  "version": "1.0.316",
+  "version": "1.0.317",
   "description": "inSite async requests over WebSockets",
   "type": "module",
   "main": "./dist/index.js",
